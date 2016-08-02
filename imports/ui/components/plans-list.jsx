@@ -18,7 +18,7 @@ export const PlansList = React.createClass({
     return plans.length > 0 ?
       <ListGroup componentClass="ul" className="price-list">
         {plans.map((plan) => (
-          <Plan key={ plan._id } plan={ plan } selectedPlan={this.handleSelectedPlan}/>
+          <Plan key={plan._id} plan={plan} selectedPlan={this.handleSelectedPlan}/>
         ))}
       </ListGroup>
     :

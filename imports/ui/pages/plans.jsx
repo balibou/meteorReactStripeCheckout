@@ -4,9 +4,6 @@ import { Meteor } from 'meteor/meteor';
 import { Bert } from 'meteor/themeteorchef:bert';
 import PlansList from '../containers/plans-list.js';
 
-// TODO
-// import { processPayment } from '../../api/stripe';
-
 const INSTANCE = this;
 const GHOSTBUSTERS_LOGO = 'https://tmc-post-content.s3.amazonaws.com/ghostbusters-logo.png';
 
@@ -42,24 +39,13 @@ export const Plans = React.createClass({
           Bert.alert('Thanks! You\'ll be ghost free soon :)', 'success');
           return response;
         });
-
-        // TODO
-        // processPayment.call({
-        //   charge,
-        // }, (error) => {
-        //   if (error) {
-        //     SELF.setState({ processing: false });
-        //     Bert.alert(error.reason, 'danger');
-        //   } else {
-        //     Bert.alert('Transaction done !', 'success');
-        //   }
-        // });
       },
       closed() {
         SELF.setState({ processing: false });
       },
     });
   },
+
   getChosenPlan(plan) {
     this.setState({ selectedService: plan });
     this.setState({ processing: true });
@@ -75,14 +61,15 @@ export const Plans = React.createClass({
     const { processing } = this.state;
 
     return <Row>
-      <Col xs={ 12 } sm={ 12 }>
-        <img width="150" src={ GHOSTBUSTERS_LOGO } alt="Ghostbusters" />
+      <Col xs={12} sm={12}>
+        <img width="150" src={GHOSTBUSTERS_LOGO} alt="Ghostbusters" />
         <h4 className="page-header">Plans</h4>
 
         {processing ?
           <p className="alert alert-warning">
-          <i className="fa fa-refresh fa-spin">
-          </i> Processing payment...</p>
+            <i className="fa fa-refresh fa-spin">
+            </i> Processing payment...
+          </p>
         :
           <div>
             <p className="alert alert-info">
@@ -92,7 +79,8 @@ export const Plans = React.createClass({
             <p className="alert alert-warning">
               To demo, use any email address along with the card number
               <strong>4242 4242 4242 4242 </strong>, any <em>future </em>
-              expiration date, and any 3 digit security code (e.g 555)</p>
+              expiration date, and any 3 digit security code (e.g 555).
+            </p>
           </div>
         }
       </Col>

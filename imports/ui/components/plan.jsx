@@ -14,15 +14,15 @@ export const Plan = React.createClass({
 
   render() {
     const { plan } = this.props;
-    return <ListGroupItem key={ plan._id } className="clearfix">
+    return <ListGroupItem key={plan._id} className="clearfix">
       <p className="pull-left">
-        <strong>{ plan.amount.usd }</strong> &mdash;
-        { plan.name }
+        <strong>{plan.amount.usd}</strong> &mdash;
+        {plan.name}
       </p>
       <a
        data-service="full-torso-apparition"
        className="btn btn-success pull-right"
-       onClick={ this.handleClick }
+       onClick={this.handleClick}
 
       >
         Buy Now

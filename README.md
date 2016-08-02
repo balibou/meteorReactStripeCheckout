@@ -1,6 +1,5 @@
 # The Meteor Chef - Stripe Checkout
 A starting point for Meteor apps with Stripe Checkout (React code).
-A tutorial is coming.
 
 <table>
   <tbody>
@@ -16,6 +15,11 @@ A tutorial is coming.
 </table>
 
 [Read the Documentation](http://themeteorchef.com/base)
+
+[COMING]
+- Tutorial
+- Testing
+- Waiting for a fix for errors in console because of react-bootstrap ([https://github.com/themeteorchef/base/issues/157])
 
 ## Preview
 
