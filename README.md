@@ -14,12 +14,12 @@ A starting point for Meteor apps with Stripe Checkout (React code).
   </tbody>
 </table>
 
-[Read the Documentation](http://themeteorchef.com/base)
+- [Read the Documentation](http://themeteorchef.com/base)
+- Tutorial on Medium is [here](https://medium.com/@benjamincherion/connecting-meteor-react-stripe-checkout-ddecfc06adec#.n72xvh51y)
 
 [COMING]
-- Tutorial
 - Testing
-- Waiting for a fix for errors in console because of react-bootstrap ([https://github.com/themeteorchef/base/issues/157])
+- Waiting for a fix for errors in console because of react-bootstrap (https://github.com/themeteorchef/base/issues/157)
 
 ## Preview
 
